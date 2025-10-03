@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 2 Website</title>
+  <!-- External Tailwind CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <a href="#home" class="flex items-center space-x-3">
+  <!-- Logo inside Big Circle -->
+  <div class="h-20 w-20 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+    <img src="assets/511162847_122124088724871121_7281347441159454673_n.jpg" alt="Logo" class="h-18 w-18 object-cover">
+  </div>
+  
+  <!-- Optional Brand Text -->
+  <span class="text-3xl font-bold">Budget এ Gadget </span>
+</a>
+
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-blue-500">Home</a>
+        <a href="#products" class="hover:text-blue-500">Products</a>
+        <a href="#reviews" class="hover:text-blue-500">Reviews</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <!-- Hamburger -->
+      <button class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" 
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+            stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-gray-100 flex items-center justify-center text-center px-4">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to My Store</h2>
+      <p class="mb-6 text-lg md:text-xl">Find the best products at affordable prices.</p>
+      <a href="#products" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+        Shop Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Products</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Product 1 -->
+        <div class="bg-gray-50 shadow rounded-lg p-4 hover:shadow-lg hover:scale-105 transform transition">
+          <img src="assets/product1.jpg" alt="Product 1" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+          <p class="text-gray-600 mb-2">Short description goes here.</p>
+          <p class="font-bold mb-3">$49.99</p>
+          <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Buy Now</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-gray-50 shadow rounded-lg p-4 hover:shadow-lg hover:scale-105 transform transition">
+          <img src="assets/product2.jpg" alt="Product 2" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Product 2</h3>
+          <p class="text-gray-600 mb-2">Short description goes here.</p>
+          <p class="font-bold mb-3">$59.99</p>
+          <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Buy Now</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-gray-50 shadow rounded-lg p-4 hover:shadow-lg hover:scale-105 transform transition">
+          <img src="assets/product3.jpg" alt="Product 3" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Product 3</h3>
+          <p class="text-gray-600 mb-2">Short description goes here.</p>
+          <p class="font-bold mb-3">$69.99</p>
+          <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-white p-6 shadow rounded-lg text-center">
+          <img src="assets/customer1.jpg" class="w-16 h-16 mx-auto rounded-full mb-4">
+          <h3 class="font-semibold">Tuhi</h3>
+          <p class="text-yellow-500 mb-2">★★★★★</p>
+          <p class="text-gray-600">Great products and amazing service!</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded-lg text-center">
+          <img src="assets/customer2.jpg" class="w-16 h-16 mx-auto rounded-full mb-4">
+          <h3 class="font-semibold">Riaz</h3>
+          <p class="text-yellow-500 mb-2">★★★★☆</p>
+          <p class="text-gray-600">Very satisfied with my purchase.</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded-lg text-center">
+          <img src="assets/customer3.jpg" class="w-16 h-16 mx-auto rounded-full mb-4">
+          <h3 class="font-semibold">Hasib</h3>
+          <p class="text-yellow-500 mb-2">★★★★★</p>
+          <p class="text-gray-600">Fast delivery and high quality products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-blue-600 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Join Our Community</h2>
+    <p class="mb-6">Stay updated with our latest products and offers.</p>
+    <button class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-200">
+      Subscribe Now
+    </button>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <p class="mb-2">📍 Chowdhury Haat , Chittagong</p>
+        <p class="mb-2">✉️ mohammadriduanulislam231250@gmail.com</p>
+        <p class="mb-6">📞 +880 172-843-7892</p>
+      </div>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <textarea placeholder="Message" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p>© 2025 Budget এ Gadget. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#home" class="hover:text-white">Home</a>
+        <a href="#products" class="hover:text-white">Products</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
